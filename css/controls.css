@@ -6,22 +6,29 @@
 }
 .controls label {
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 36px;
+    height: 36px;
+    
     border-radius: 50%;
-    background-color: var(--control-color);
+    background-color: transparent;
+    box-shadow: inset 0 0 0 18px var(--control-color);
+    transition: box-shadow 0.3s ease;
     cursor: pointer;
 }
 
+.controls label:hover {
+    box-shadow: inset 0 0 0 18px var(--accent-color);
+}
+
 #slide1:checked ~ .controls label:nth-child(1) {
-    background-color: var(--accent-color);
+    box-shadow: inset 0 0 0 18px var(--accent-color);
 }
 #slide2:checked ~ .controls label:nth-child(2) {
-    background-color: var(--accent-color);
+    box-shadow: inset 0 0 0 18px var(--accent-color);
 }
 #slide3:checked ~ .controls label:nth-child(3) {
-    background-color: var(--accent-color);
+    box-shadow: inset 0 0 0 18px var(--accent-color);
 }
 #slide4:checked ~ .controls label:nth-child(4) {
-    background-color: var(--accent-color);
+    box-shadow: inset 0 0 0 18px var(--accent-color);
 }
